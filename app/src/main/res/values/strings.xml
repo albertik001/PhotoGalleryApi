@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PhotoGalleryApi</string>
+    <string name="btm_nav_text_new">New</string>
+    <string name="btm_nav_text_popular">Popular</string>
+
+    <string name="navigation_error">Произошла ошибка при настройке навигации.</string>
+    <string name="not_desc">Нет описания</string>
+    <string name="oh_shucks">Oh shucks!</string>
+    <string name="slow_or_no_internet_connection_please_check_your_internet_settings">Slow or no internet connection.\nPlease check your internet settings</string>
+
+</resources>

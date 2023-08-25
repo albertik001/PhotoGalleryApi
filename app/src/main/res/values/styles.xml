@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="selectableItemTheme">
+        <item name="colorControlHighlight">@color/ripple_material_light</item>
+    </style>
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/selectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="SelectableItemForeground">
+        <item name="android:theme">@style/selectableItemTheme</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+</resources>

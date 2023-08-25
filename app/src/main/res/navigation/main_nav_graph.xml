@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph.xml"
+    app:startDestination="@id/newPhotosFragment">
+
+
+    <fragment
+        android:id="@+id/newPhotosFragment"
+        android:name="org.tredo.photogalleryapi.presentation.ui.fragments.newPhotos.NewPhotosFragment"
+        android:label="NewPhotosFragment"
+        tools:layout="@layout/fragment_new_photos">
+
+        <action
+            android:id="@+id/action_newPhotoFragment_to_newPhotoDetailFragment"
+            app:destination="@id/photoDetailFragment"
+            app:enterAnim="@anim/fragment_scale_in"
+            app:exitAnim="@anim/fragment_scale_out"
+            app:popEnterAnim="@anim/fragment_scale_in"
+            app:popExitAnim="@anim/fragment_scale_out"
+            app:popUpTo="@id/newPhotosFragment"
+            app:popUpToSaveState="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/popularPhotosFragment"
+        android:name="org.tredo.photogalleryapi.presentation.ui.fragments.popularPhotos.PopularPhotosFragment"
+        android:label="PopularPhotosFragment"
+        tools:layout="@layout/fragment_popular_photos">
+
+        <action
+            android:id="@+id/action_popularPhotosFragment_to_newPhotoDetailFragment"
+            app:destination="@id/photoDetailFragment"
+            app:enterAnim="@anim/fragment_scale_in"
+            app:exitAnim="@anim/fragment_scale_out"
+            app:popEnterAnim="@anim/fragment_scale_in"
+            app:popExitAnim="@anim/fragment_scale_out"
+            app:popUpTo="@id/popularPhotosFragment"
+            app:popUpToSaveState="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/photoDetailFragment"
+        android:name="org.tredo.photogalleryapi.presentation.ui.fragments.detail.PhotoDetailFragment"
+        android:label="photoDetailFragment"
+        tools:layout="@layout/fragment_photo_detail">
+
+        <argument
+            android:name="photo"
+            app:argType="string" />
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+        <argument
+            android:name="desc"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
